@@ -49,7 +49,7 @@ const DropdownLinks = [
     link: '/#'
   }
 ]
-const Navbar = () => {
+const Navbar = ({ handleOrderPopup }) => {
   return (
     <div
       className='shadow-md bg-white
@@ -95,7 +95,7 @@ const Navbar = () => {
             </div>
             {/* order button */}
             <button
-              onClick={() => alert('Ordering not available yet')}
+              onClick={() => handleOrderPopup()}
               className='bg-gradient-to-r from-primary
           to-secondary transition-all duration-200
           text-white py-1 px-4 rounded-full flex 

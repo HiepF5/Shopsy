@@ -25,7 +25,7 @@ const ImageList = [
     description: 'consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
   }
 ]
-const Hero = () => {
+const Hero = ({ handleOrderPopup }) => {
   var settings = {
     dots: true,
     infinite: true,
@@ -69,6 +69,7 @@ const Hero = () => {
                   </p>
                   <div data-aos='fade-up' data-aos-duration='500' data-aos-delay='300'>
                     <button
+                      onClick={handleOrderPopup}
                       className='bg-gradient-to-r from-primary
                to-secondary hover:scale-105 
                duration-200 text-white 
